@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+<book>
+<name>Dune</name>
+<author>Frank Herbert</author>
+<style>Science Fiction</style>
+</book>
+<book>
+<name>1984</name>
+<author>George Orwell</author>
+<style>Science Fiction</style>
+</book>
+<book>
+<name>Pride and Prejudice</name>
+<author>Jane Austen</author>
+<style>Romance</style>
+</book>
+<book>
+<name>The Very Hungry Caterpillar</name>
+<author>Eric Carle</author>
+<style>Children</style>
+</book>
+<book>
+<name>The Giving Tree</name>
+<author>Shel Silverstein</author>
+<style>Children</style>
+</book>
+</books>
