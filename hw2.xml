@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw2.css" ?>
+
+<!--> Books are being donated by instructors and publishers -->
+
 <books>
-<book>
-<name>Dune</name>
-<author>Frank Herbert</author>
-<style>Science Fiction</style>
-</book>
-<book>
-<name>1984</name>
-<author>George Orwell</author>
-<style>Science Fiction</style>
-</book>
-<book>
-<name>Pride and Prejudice</name>
-<author>Jane Austen</author>
-<style>Romance</style>
-</book>
-<book>
-<name>The Very Hungry Caterpillar</name>
-<author>Eric Carle</author>
-<style>Children</style>
-</book>
-<book>
-<name>The Giving Tree</name>
-<author>Shel Silverstein</author>
-<style>Children</style>
-</book>
+    <book pages= "1">
+        <name>Introduction to HTML</name>
+        <author>Joseph Gardner</author>  
+        <style>Press &#169;</style>
+    </book>
+    <book pages= "2"> 
+        <name>Networking Infrastructure</name>
+        <author>Adam Douglas &amp; Janice Dall</author>
+        <style>Cengage &#169;</style>
+    </book> 
+    <book pages= "3">
+        <name>Soft Skills in IT</name>
+        <author>Mark Hunter</author>
+        <style >Bolding Publisher &#169;</style>
+    </book>
+    <book pages= "4">
+        <name>Network Security</name>
+        <author>Jennifer Starter  &amp; Yuri Adantov</author>
+        <style>Wrox &#169;</style>
+    </book>
+    <book pages= "5">
+        <name>XML &amp; JSON</name>
+        <author>Stuart Bell </author>
+        <style>Cengage; &#169; </style>
+    </book>
 </books>

@@ -1,8 +1,24 @@
-h1 {
-  text-align: center;
+books {
+  display: block;
+  background-color: lightgray;
+}
+book {
+  display: block;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+name {
+  display: block;
+  font-style: bold;
   color: red;
 }
-.name {
-  background-color: yellow;
-  color: navy;
+author {
+  display: block;
+}
+style {
+  display: block;
+}
+
+book:nth-child(odd) {
+  background-color: lightblue;
 }
