@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE products [
+
+  
+    <!ELEMENT products (product+)>
+
+    <!ELEMENT product (Name, Price, Color?, madeUSA)>
+
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Color (#PCDATA)>
+    <!ELEMENT madeUSA (#PCDATA)>
+
+
+    <!ATTLIST product
+        ProdID ID #REQUIRED>
+
+   
+    <!ENTITY madeUSA_text "Made in USA">
+
+]>
+
+
+
+<products>
+    <product ProdID="Product">
+        <Name>TV</Name>
+        <Price>1500</Price>
+        <Color>Black</Color>
+        <madeUSA>&madeUSA_text;</madeUSA>
+    </product>
+
+    <product ProdID="Product2">
+        <Name>iphone</Name>
+        <Price>2000</Price>
+        <madeUSA>&madeUSA_text;</madeUSA>
+    </product>
+</products>
