@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="hw7.css"?>
 <states xmlns="http://www.gov.org/east"
         xmlns:west="http://www.gov.org/west">
 
-  <!-- East states (default namespace) -->
+
   <state>
     <name>Florida</name>
     <capital>Tallahassee</capital>
@@ -16,7 +17,7 @@
     <capital>Raleigh</capital>
   </state>
 
-  <!-- West states (use prefix to differentiate) -->
+
   <west:state>
     <west:name>California</west:name>
     <west:capital>Sacramento</west:capital>
