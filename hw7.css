@@ -4,12 +4,23 @@
 state,
 west|state {
   display: block;
+  margin: 5px 0;
+  padding: 8px;
 }
 
 state {
-  background-color: #44e0fb;
+  background-color: #d0e7ff;
 }
 
 west|state {
-  background-color: #dfb367;
+  background-color: #ffe4b5;
+}
+
+name,
+capital,
+west|name,
+west|capital {
+  display: inline;
+  margin-right: 10px;
+  font-weight: bold;
 }
