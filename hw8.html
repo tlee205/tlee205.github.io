@@ -1,61 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>CNIT 133 Homework 8</title>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Homework 8 for JavaScript, jQuery, AJAX course at CCSF"
-    />
-
+    <title>Tiffany Lee CNIT131A</title>
     <style>
-      body {
-        background-color: rgb(193, 158, 207);
-      }
-      h1,
-      h2,
-      p {
-        font-style: italic;
-      }
-
-      h1 {
-        text-align: center;
-      }
-      h2 {
-        text-align: center;
-      }
+        body {
+          background-color: rgb(180, 173, 230);
+        }
+        h1.italic,
+        h2.italic,
+        p.italic {
+          font-style: italic;
+        }
+        h1,
+        h2 {
+          text-align: center;
+        }
     </style>
-  </head>
-  <body>
-    <h1 style="color: rgb(177, 127, 190)" class="italic">Tiffany Lee</h1>
 
-    <h2 style="color: rgb(33, 93, 41)" class="italic">CNIT 133: Homework 8</h2>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="description" content="hw8"><link rel="canonical" href="hw8.html"> 
 
-    <p style="color: white" class="italic">
-      This page is for<br />
-      CS 133:Homework 8
+    <h1 style="color:rgba(227, 206, 229, 0.921);" class="italic">Tiffany Lee</h1>
+
+    
+    <h1> HW 8 Extra XML</h1>
+   
+
+    <div class="section">
+        <h2> Purpose and Characteristics of XQuery</h2>
+        <p>
+            XQuery is a query language designed to retrieve data stored in XML format.
+            The main purpose is to allow users to extract specific information from XML documents efficiently.
+        
+            XQuery is designed specifically for XML data. It can be used to generate summary reports and transform XML data to HTML.
+            It supports filtering, sorting, and transforming XML data.
+            XQuery can also return results in XML format.
+        
+         </p>
+    </div>
+
+    <h2> XML Analysis</h2>
+    <p>
+        The root element is <strong>&lt;bookstore&gt;</strong>, which contains multiple 
+        <strong>&lt;book&gt;</strong> elements. Each book represents a single record in the dataset.
+        Inside each book, there are child elements:
+    
+    <strong>&lt;title&gt;</strong> the name of the book. 
+       <strong>&lt;author&gt;</strong>  the person who wrote the book.
+        <strong>&lt;price&gt;</strong>  the cost of the book.
+    </ul>
     </p>
-
-    <hr />
-    <p style="color: white">This page can take you to these pages below:</p>
+    <h3>
+        Explanation of XQIB and How it Works with xQuery
+    </h3>
+    <p>
+        XQIB allows XQuery to directly run in the browser. There is no plugin onstallation needed and it can be used with or instead
+        of JavaScript.
+    </p>
+    <p>
+        The XQuery expression filters books based on price. It selects only books
+        where the price is less than 30.
+    </p>
     <ul>
-      <li>
-        <a href="cnit133hw.html" style="color: rgb(12, 60, 112)"
-          >Main Page Tiffany's Homework</a
-        >
-      </li>
-
-      <li>
-        <a href="ajaxassignment.html" style="color: rgb(3, 190, 20)"
-          >Ajax Assignment</a
-        >
-      </li>
-
-      <li>
-        <a href="cd_catalog.xml" style="color: rgb(3, 190, 20)">CD Catalog</a>
-      </li>
+        <li>doc("hw8.xml") loads the XML file.</li>
+        <li>/bookstore/book selects all book elements.</li>
+        <li>for $b in ...loops through and reads each book.</li>
+        <li>where $b/price &lt; 30 filters books that are cheaper than $30.</li>
+        <li>return $b/title outputs the titles of those books.</li>
     </ul>
 
-    <p>Copyright &#169; Tiffany Lee.</p>
+    <p>
+        <strong>Result:</strong> The query will return the titles of:
+    </p>
+    <ul>
+        <li>Harry Potter</li>
+        <li>The Snowy Days</li>
+    </ul>
+    <p>
+        <a href="https://www.sqlshack.com/filtering-xml-columns-using-xquery-in-sql-server/" target="_blank">
+            Filtering XML Columns using XQuery in SQL Server
+        </a>
+    </p>
+ 
   </body>
 </html>
